@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HOME</title>
     <style>
         *{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,6 +48,10 @@
             text-decoration: none;
             font-weight: bold;
             color: #0D0D0D;
+            transition:all 0.2s ease-in;
+        }
+        a:hover{
+            scale: 1.1;
         }
         #main{
             display: flex;
@@ -58,8 +62,17 @@
             background-color: #F7CE5B;
         }
         .trending, .latest, .events, .etc{
+            font-size: large;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            border-radius: 25px;
+            transition: all 0.2s ease-in-out;
+        }
+        #main:hover{
+            background-color: rgb(231, 173, 88);
+            font-size: larger;
+            cursor: pointer;
             border: 2px solid black;
-            margin: 2px;
         }
     </style>
 </head>
