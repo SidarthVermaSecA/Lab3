@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+        }
+        h1{
+            text-align: center;
+        }
+        #navigation{
+            display: flex;
+            height: 7vh;
+            width: 100%;
+            background-color: #5BF75B ;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 10px;
+        }
+        nav{
+            display: contents;
+            align-items: center;
+            justify-content: center;
+
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #0D0D0D;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>Blog Post Form</h1> <hr> <br>
+    <div id="navigation">
+        <nav>
+            <a href="home_page.html" target="_blank">Home</a>
+            <a href="table_of_contents.html" target="_blank" >Table of Contents</a>
+            <a href="blog_post_form.html" target="_blank" style="text-decoration:underline dashed;">Submission Form</a>
+            <a href="Multimedia_blog_post.html" target="_blank">Media</a>
+        </nav>    
+    </div>
+    <h4>Please fill the form above to process your blog submission;</h4>
+    <form action="">
+        <label for="postTitle">Post Title</label> <br><input type="text" placeholder="Type here"> <br>
+        <label for="authorsName">Author's Name</label> <br><input type="text" placeholder="Type here"> <br>
+        <label for="Content">Enter your Blog content below</label> <br>
+        <textarea name="" id="" placeholder="Blog Content...."></textarea> <br>
+        <label for="">Select your blog category</label>  <select name="Click" id=""> 
+            <option value="">----Please choose a category-----</option>
+            <optgroup label="Food"> 
+                <option value="">Chinese Cuisine</option>
+                <option value="">Italian Cuisine</option>
+                <option value="">Sea food</option>
+            </optgroup>
+            <optgroup label="Cars">
+                <option value="">EV</option>
+                <option value="">Hybrid</option>
+                <option value="">Flying</option>
+            </optgroup>
+            <optgroup label="Technology">
+                <option value="">AI</option>
+                <option value="">Leading Tech Companies</option>
+                <option value="">Emerging Tech</option>
+            </optgroup>
+            <option value="">Others</option>
+        </select> <br>
+        <input type="submit" onclick="alert('Form Submitted!')">
+    </form> 
+</body>
+</html>
