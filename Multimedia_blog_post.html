@@ -42,10 +42,22 @@
             justify-content: center;
             align-items: center;
         }
-        .podcast{
+        .podcast, .video{
             display: flex;
             width: 100%;
             flex-direction: row-reverse;
+        }
+        .video{
+            flex-direction: row;
+        }
+        video{
+            border-radius: 20px;
+        }
+        .audio{
+            font-size: large;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
         }
     </style>
 </head>
@@ -69,9 +81,19 @@
         <p> <b>Hear this podcast to7</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni eveniet excepturi modi repellat illo, minima, blanditiis consequuntur possimus ad corporis voluptatem, earum obcaecati harum eius dolore iste dolores debitis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque deleniti doloribus possimus aliquam cum. A error omnis assumenda eius at eum nam ipsa natus odit dolorum, consequatur earum quo?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic numquam beatae molestias perferendis explicabo officia necessitatibus, quis veniam harum exercitationem deleniti laborum maxime doloremque tempore eaque magni nobis, dolore quos.
         Accusamus officia, iure laborum in corporis praesentium. Asperiores in veniam labore soluta, cum sit debitis est repudiandae neque aliquid repellat corrupti, sed inventore vero reiciendis nisi cupiditate ea maxime corporis? </p>
         <iframe allow="autoplay" width="300%" style="padding: 15px;" height="300" src="https://www.iheart.com/artist/doug-stanhope-344/?embed=true" frameborder="0"></iframe>
+    </div> <br>
+    <div class="video">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore, tenetur dignissimos nulla pariatur unde, nam, aut quisquam voluptatem id ut iste debitis culpa nesciunt ipsum modi eaque corrupti tempora! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea modi nostrum ad facilis, nisi quae excepturi esse vero alias, enim id itaque eos adipisci sit consequuntur fugit optio beatae nulla?
+        Quia tenetur ad accusantium necessitatibus perferendis veritatis aspernatur iste quidem esse enim, soluta cumque, molestiae similique voluptas ut in nobis velit. Itaque aliquam est labore et voluptatum harum dolorum corporis.
+        Quasi cupiditate quo quis doloribus excepturi possimus sunt quae tempore, vero quia asperiores reprehenderit aliquam nulla aspernatur, ipsum laboriosam quam illo sint! Totam nulla inventore itaque accusantium atque, delectus aperiam? </p>
+        <video src="133165-755982945_small.mp4" autoplay muted controls width="55%"></video>
+    </div> <br> <br>
+    <div class="audio"> 
+        <p>Audio and its controls Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptate ut in quibusdam quo, vel dicta expedita quasi eaque nostrum officia sapiente ipsam. Laborum officiis est enim, sed et rem?</p>
+        <audio src="bclosed.mp3" muted autoplay controls></audio>
     </div>
-
-    <video src="133165-755982945_small.mp4" autoplay muted controls ></video>
+    
+   
     <iframe width="560" height="315" src="https://www.youtube.com/embed/SXbEN5lWRt8?si=r8xEgk25YN9XOIeG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 25px;"></iframe>
 
 </body>
