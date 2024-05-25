@@ -49,6 +49,18 @@
             font-weight: bold;
             color: #0D0D0D;
         }
+        #main{
+            display: flex;
+            width: 100%;
+            height: 20vh;
+            align-items: center;
+            justify-content: center;
+            background-color: #F7CE5B;
+        }
+        .trending, .latest, .events, .etc{
+            border: 2px solid black;
+            margin: 2px;
+        }
     </style>
 </head>
 <body>
@@ -64,5 +76,12 @@
         </nav>    
     </div>
     <h2>this is the home page of our blog website</h2>
+    <main>
+        <div class="trending" id="main"><p>Trending Blogs 🔥</p></div>
+        <div class="latest" id="main"><p>Latest Blogs ✨</p></div>
+        <div class="events" id="main"><p>Upcoming Events ⏳</p></div>
+        <div class="etc" id="main"><p>Extra 👾</p></div>
+
+    </main>
 </body>
 </html>

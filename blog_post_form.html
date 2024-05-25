@@ -32,6 +32,38 @@
             font-weight: bold;
             color: #0D0D0D;
         }
+        #title, #author, #textarea, #selections{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        #submit{
+            font-size: large;
+            width: 20%;
+            background-color: #FFFFFF;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        #submit:hover{
+            color: white;
+            background-color: black;
+            scale: 1.1;
+        }
     </style>
 </head>
 <body>
@@ -48,11 +80,11 @@
     </div>
     <h4>Please fill the form above to process your blog submission;</h4>
     <form action="">
-        <label for="postTitle">Post Title</label> <br><input type="text" placeholder="Type here"> <br>
-        <label for="authorsName">Author's Name</label> <br><input type="text" placeholder="Type here"> <br>
+        <label for="postTitle">Post Title</label> <br><input id="title" type="text" placeholder="Type here"> <br>
+        <label for="authorsName">Author's Name</label> <br><input id="author" type="text" placeholder="Type here"> <br>
         <label for="Content">Enter your Blog content below</label> <br>
-        <textarea name="" id="" placeholder="Blog Content...."></textarea> <br>
-        <label for="">Select your blog category</label>  <select name="Click" id=""> 
+        <textarea name="" id="textarea" placeholder="Blog Content...."></textarea> <br>
+        <label for="">Select your blog category</label>  <select name="Click" id="selections"> 
             <option value="">----Please choose a category-----</option>
             <optgroup label="Food"> 
                 <option value="">Chinese Cuisine</option>
@@ -71,7 +103,9 @@
             </optgroup>
             <option value="">Others</option>
         </select> <br>
-        <input type="submit" onclick="alert('Form Submitted!')">
+        <div class="button">
+            <input id="submit" type="submit" onclick="alert('Form Submitted!')">
+        </div>
     </form> 
 </body>
 </html>
